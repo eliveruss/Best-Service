@@ -6,8 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     width: 100vw;
@@ -107,7 +110,7 @@ header h1 p {
     right: 7%;
     z-index: 3;
     transition: 0.5s;
-    border: 2px solid #fff;
+    border: 3px double #fff;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 7.5px;
@@ -177,9 +180,9 @@ nav>ul {
     overflow: hidden;
 }
 nav ul li {
-    margin: 8px;
+    margin: 4px;
     overflow: hidden;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 nav ul li a {
@@ -199,6 +202,7 @@ nav ul li a {
     background-color: white;
     z-index: -1;
     transition: .8s;
+    display: none;
 }
 .underline1 {
     bottom: 8%;
@@ -220,9 +224,9 @@ nav ul li a:hover {
     text-shadow: 2px 3px black;
 }
 
-.rangeofservices {
+.rangeofservices, .rangeofservices2 {
     position: relative;
-    top: calc(100vh + 10px);
+    top: calc(145vh + 10px);
     width: 90vw;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -235,25 +239,26 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* .rangeofservices.active {
-    width: 100vw;
-    grid-template-columns: 20vw 20vw;
-    transition: .5s;
-} */
+.rangeofservices2 {
+    top: calc(200vh - 10px);
+}
 
-.klima, .disco {
+img {
     position: absolute;
-    top: 100vh;
-    z-index: -1;
     max-width: 100vw;
+    z-index: -1;
     margin: 0;
 }
 
-.disco {
-    top: 140vh;
+.klima {
+    top: 100vh;
 }
 
-.rangeofservices div {
+.disco {
+    top: 180vh;
+}
+
+.rangeofservices div, .rangeofservices2 div {
     min-height: 40px;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
@@ -265,7 +270,7 @@ nav ul li a:hover {
     border-width: 1px;
 }
 
-.banner {
+.banner, .banner2 {
     position: absolute;
     display: block;
     width: 100vw;
@@ -283,11 +288,68 @@ nav ul li a:hover {
     border-right: none;
 }
 
+.cat {
+    top: 260vh;
+    border-top: #fff 4px solid;
+}
+
+.about {
+    display: block;
+    position: relative;
+    top: 248.5vh;
+    height: 35vh;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0,0,0);
+    border-top: #fff 4px solid;
+    border-bottom: #fff 4px solid;
+}
+
+.about h1 {
+    display: block;
+    padding-top: 8px;
+    color: rgb(255, 210, 0);
+}
+
+.about p {
+    position: absolute;
+    color:rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 4px;
+}
+
+.majster {
+    top: 340vh;
+    border-bottom: #fff 4px solid;
+}
+
+.banner2 {
+    top: 385vh;
+    border: none;
+    font-size: 24px;
+}
+
+.map {
+    position: absolute;
+    display: block;
+    top: 400vh;
+    width: 100vw;
+    border: #fff 4px solid;
+    border-left: none;
+    border-right: none;
+}
+
+.map iframe {
+    display: block;
+    width: 100vw;
+}
+
 .footerspace {
     position: relative;
     display: block;
     height: 10vh;
-    top: 110vh;
+    top: 337.5vh;
     background-color: black;
     z-index: -5;
 
