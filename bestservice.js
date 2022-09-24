@@ -16,3 +16,5 @@ document.querySelectorAll("nav").forEach(n => n.addEventListener("click"), () =>
     services.classList.remove("active");
    // rangeofservices.classList.remove("active");
 })
+
+

@@ -8,6 +8,7 @@
     <meta name="keywords" content="bestservice, best service, bestserwis, best serwis, wiślina, mechanik, mechanika pojazdowa, serwis samochodowy, serwis, pruszcz gdański, mechanik pruszcz gdański, wulkanizacja, klimatyzacja, wymiana opon, renowacja lamp, renowacja reflektorów">
     <script src="https://kit.fontawesome.com/45e2f5a598.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -74,6 +75,36 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium ex qui corrupti minima, explicabo expedita magni blanditiis sint facere quidem fugiat hic ducimus quaerat quia eaque tempore iusto aliquam ipsa dicta autem suscipit necessitatibus rerum. Quae provident, rerum perferendis ut quasi, esse dignissimos alias ad natus, enim nisi assumenda.</p>
 </article>
 
+
+
+<div class="swiper-container" id="gallery">
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/swiper/w218.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/huracan3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/huracan.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/huracan2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/w126.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/disco2.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/swiper/office.jpg" alt=""></div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
 <img class="majster" src="images/majster.jpg" alt="">
 
 <div class="banner2">Przyjedź i zobacz!</div>
@@ -88,7 +119,27 @@
         <p>Best Service <br /> ul. Ogrodnicza 1, 83-021 Wiślina (obok Pruszcza Gdańskiego) <br /> Tel.: 603 316 989</p>
     </footer>
     <div class="footerspace"></div>
-    <script src="burger.js"></script>
+<script src="bestservice.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+  loop: true,
 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
 </body>
 </html>
