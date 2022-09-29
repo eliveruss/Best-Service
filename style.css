@@ -428,7 +428,7 @@ footer p {
 
 
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) and (orientation: portrait) {
     
     header {
         margin-left: 12vw;
@@ -468,7 +468,7 @@ footer p {
         top: 410.5vh;
     }
 }
-@media screen and (min-width: 360px) and (min-height: 740px) {
+@media screen and (min-width: 360px) and (min-height: 740px) and (orientation: portrait) {
 
     .rangeofservices {
         top: 135vh;
@@ -506,7 +506,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (orientation: portrait) {
     .banner{
         top: 74vh;
     }
@@ -531,7 +531,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 375px) and (min-height: 812px) {
+@media screen and (min-width: 375px) and (min-height: 812px) and (orientation: portrait) {
     
     header {
         margin-left: 0.5vw;
@@ -603,16 +603,16 @@ footer p {
     }
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 390px) and (orientation: portrait) {
     header {
         margin-left: 2.5vw;
     }
 }
 
-@media screen and (min-width: 412px) {
+@media screen and (min-width: 412px) and (orientation: portrait) {
     header {
-        margin-left: 1vw;
-        font-size: 24px;
+        margin-left: 5vw;
+        font-size: 22px;
     }
     .burgerbars {
 
@@ -677,7 +677,7 @@ footer p {
         font-size: 16px;
     }
 }
-@media screen and (min-width: 412px) and (min-height: 896px) {
+@media screen and (min-width: 412px) and (min-height: 896px) and (orientation: portrait) {
     .footerspace {
         top: 352vh;
     }
@@ -685,7 +685,7 @@ footer p {
         top: 204vh;
     }
 }
-@media  screen and (min-width: 414px) and (min-height: 736px) {
+@media  screen and (min-width: 414px) and (min-height: 736px) and (orientation: portrait) {
     .rangeofservices {
         top: 133vh;
     }
@@ -699,7 +699,7 @@ footer p {
         top: 382vh;
     }
 }
-@media screen and (min-width: 414px) and (min-height: 896px) {
+@media screen and (min-width: 414px) and (min-height: 896px) and (orientation: portrait) {
     nav {
         height: 37vh;
     }
@@ -709,10 +709,17 @@ footer p {
     .footerspace {
         top: 352vh;
     }
+    .rangeofservices {
+        top: 129vh;
+    }
+    .rangeofservices2 {
+        top: 170vh;
+    }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (orientation: portrait) {
     header {
-        font-size: 28px;
+        font-size: 24px;
+        margin-left: 8vw;
     }
     nav {
         height: 38vh;
