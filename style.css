@@ -41,6 +41,7 @@ header {
     -moz-box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 1);
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 1);
     z-index: 5;
+    white-space: nowrap;
 }
 
 h1 {
