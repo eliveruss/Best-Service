@@ -24,10 +24,10 @@ body {
 }
 
 header {
-    position: relative;
-    margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    position: absolute;
+    top: 1vh;
+    left: calc(50vw - 140px);
     min-width: 280px;
     max-width: 280px;
     min-height: 61px;
@@ -49,8 +49,7 @@ h1 {
     text-transform: uppercase;
 }
 
-header p {
-    position: absolute;
+header div {
     display: inline-block;
     padding: 3px;
 }
@@ -79,7 +78,7 @@ header p {
     display: block;
     cursor: pointer;
     position: fixed;
-    top: 15vh;
+    top: 8.5vh;
     right: 7%;
     z-index: 3;
     transition: 0.5s;
@@ -121,7 +120,7 @@ nav {
     text-align: center;
     max-width: 90vw;
     right: -45vw;
-    top: 25vh;
+    top: 14.5vh;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.85);
     border-color: #fff;
