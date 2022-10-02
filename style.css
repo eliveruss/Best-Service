@@ -537,3 +537,244 @@ footer p {
         font-size: 3em;
     }
 }
+
+@media screen and (min-width: 300px) and (orientation: landscape) {
+    .logo img{
+        width: 60vw;
+    }
+    .burgerbars {
+        top: 60px;
+        width: 40px;
+        height: 40px;
+        padding: 7px;
+    }
+    .bar {
+        width: 20px;
+        height: 2px;
+    }
+     
+    .burgerbars.active .bar:nth-child(1) {
+        transform: translateY(5px) rotate(135deg);
+    }
+      
+    .burgerbars.active .bar:nth-child(3) {
+        transform: translateY(-5px) rotate(-135deg);
+    }
+    .services {
+        max-width: 60vw;
+    }
+    .services li{
+        margin: 2px;
+        font-size: 10px;
+    }
+    nav {
+        top: 40vh;
+    }
+    nav ul li{
+        padding: 5px;
+    }
+    footer {
+        height: 14vh;
+        background-color: #000;
+    }
+    .footerspace {
+        height: 14vh;
+    }
+    .footer1 {
+        font-size: 3px;
+    }
+    .footer2 {
+        font-size: 7px;
+    }
+    footer p {
+        color: rgb(255, 210, 0);
+    }
+}
+@media screen and (min-width: 500px) and (orientation: landscape) {
+    .logo {
+        margin-bottom: 70px;
+    }
+    .burgerbars {
+        top: 35px;
+    }
+    nav {
+        top: 110px;
+    }
+    nav ul li{
+        padding: 5px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .services {
+        max-width: 100vw;
+    }
+    footer {
+        height: 50px;
+    }
+    .footerspace {
+        height: 50px;
+    }
+    .footer1 p {
+        font-size: 6px;
+    }
+    .footer2 p {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 640px) and (orientation: landscape) {
+    .logo img{
+        margin-left: 5vh;
+    }
+    footer {
+        height: 70px;
+    }
+    .services.active {
+        width: 70vw;
+    }
+    nav {
+        top: 82px;
+    }
+    nav ul li {
+        padding: 9px;
+    }
+    .rangeofservices div, .rangeofservices2 div {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 658px) and (max-height:320px) and (orientation: landscape) {
+    footer {
+        height: 50px;
+    }
+    .footerspace {
+        height: 50px;
+    }
+}
+@media screen and (min-width: 800px) and (orientation: landscape) {
+    .logo img {
+        width: 40vw;
+    }
+    .services li{
+        margin: 3px;
+        font-size: 18px;
+    }
+    .burgerbars{
+        height: 50px;
+        width: 60px;
+        padding: 6px;
+    }
+    .bar {
+        width: 40px;
+        height: 3px;
+        margin: 5px auto;
+    }
+    .burgerbars.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(405deg);
+    }
+    .burgerbars.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-405deg);
+    }
+    nav {
+        top: 100px;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    .rangeofservices div, .rangeofservices2 div {
+        font-size: 20px;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    .about p {
+        font-size: 20px;
+    }
+    .footer1 p {
+        font-size: 8px;
+    }
+    .footer2 p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+    .logo, .burgerbars {
+        display: none;
+    }
+    header {
+        display: block;
+        margin: 2vw;
+    }
+    .best, .service {
+        font-size: 150%;
+    }
+    .underline1, .underline2 {
+        display: block;
+     }
+    nav {
+        position: sticky;
+        float: right;
+        top: 0;
+        margin-right: 1vw;
+        width: 70vw;
+        max-width: 90vw;
+    }
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+    }
+    nav ul li {
+        padding: 1vw;
+        margin: 1vw;
+    }
+    nav ul li a {
+        font-size: 1.8vw;
+    }
+    .services {
+        max-width: 90vw;
+        margin-left: 5vw;
+        font-size: 2vw;
+        padding: 5vw;
+    }
+    .services li {
+        padding: 2vw;
+        margin: 0.5vw;
+        border-radius: 50px;
+    }
+    .banner, .banner2 {
+        font-size: 36px;
+    }
+    .rangeofservicescontainer, .rangeofservices2container {
+        position: relative;
+    }
+    .rangeofservices, .rangeofservices2 {
+        position: absolute;
+        left: 5vw;
+        top: 5%;
+        height: 90%;
+        gap: 30px;
+    }
+    .rangeofservices div, .rangeofservices2 div {
+        background-color: rgba(0,0,0, 0.6);
+        font-size: 30px;
+        border-radius: 30px;
+    }
+    .footerspace {
+        height: 13vh;
+    }
+    footer {
+        height: 13vh;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .footer1 p {
+        font-size: 12px;
+    }
+    .footer2 p {
+        font-size: 20px;
+    }
+}
