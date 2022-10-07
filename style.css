@@ -362,6 +362,7 @@ footer {
     border-color: rgba(255, 210, 0, 0.7);
     border-top-style: dashed;
     z-index: 1;
+    overflow: scroll;
 }
 
 footer p {
