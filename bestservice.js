@@ -10,7 +10,7 @@ burgerbars.addEventListener("click", () => {
     services.classList.toggle("active");
 })
 
-document.querySelectorAll("nav").forEach(n => n.addEventListener("click"), () => {
+nav.addEventListener("click", () => {
     burgerbars.classList.remove("active");
     nav.classList.remove("active");
     services.classList.remove("active");
