@@ -18,40 +18,42 @@ nav.addEventListener("click", () => {
 
 // Popup modal 
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+const noscroll = document.querySelector('body');
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
   })
 })
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
+  const modals = document.querySelectorAll('.modal.active');
   modals.forEach(modal => {
-    closeModal(modal)
+    closeModal(modal);
   })
 })
 
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
+    const modal = button.closest('.modal');
+    closeModal(modal);
   })
 })
 
 function openModal(modal) {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
-
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+  noscroll.classList.add('active');
 }
 
 function closeModal(modal) {
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+  noscroll.classList.remove('active');
 }
