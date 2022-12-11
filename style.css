@@ -237,7 +237,7 @@ nav a,
 .services button,
 .services button:hover,
 .services button:hover i {
-    transition: .25s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 nav a:hover,
@@ -305,9 +305,8 @@ nav a:focus {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 150%) scale(0);
-    border: var(--border);
-    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(0) rotate(-25deg) skew(-90deg);
+    border-radius: 25px;
     background-color: var(--transparent-black);
     backdrop-filter: blur(10px);
     -webkit-box-shadow: inset 0px 0px 20px 25px black;
@@ -321,7 +320,23 @@ nav a:focus {
     font-size: 1.2em;
     letter-spacing: 1.5px;
     line-height: 3vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 5;
+}
+
+.modal::-webkit-scrollbar {
+      width: .6em;
+}
+   
+.modal::-webkit-scrollbar-track {
+    margin: 1.5em;
+}
+   
+.modal::-webkit-scrollbar-thumb {
+    background-color: var(--darkyellow);
+    outline: 1px solid black;
+    box-shadow: inset 0 0 .5em black;
 }
 
 .modal.active {
@@ -333,7 +348,7 @@ nav a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(125deg, var(--darkyellow) 15%, lightgreen 60%, orange 75%, var(--darkyellow) 95%);
+    background: linear-gradient(120deg, var(--darkyellow)15%, rgb(255, 135, 0)60%, rgb(255, 255, 0) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
@@ -342,10 +357,11 @@ nav a:focus {
 .modal-body {
     border-top: 1px solid var(--darkyellow);
     align-items: center;
+    font-family: var(--alt-font);
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.45rem;
 }
 
 .close-button {
@@ -353,10 +369,11 @@ nav a:focus {
     outline: none;
     border: none;
     background: none;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #overlay {
+    cursor: pointer;
     position: fixed;
     opacity: 0;
     top: 0;
@@ -376,7 +393,7 @@ nav a:focus {
 .modal.active,
 #overlay,
 #overlay.active {
-    transition: 1s;
+    transition: .5s ease-in-out;
 }
 /* These big banners with black background and phone number or location */
 

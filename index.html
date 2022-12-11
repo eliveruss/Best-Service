@@ -44,23 +44,78 @@
     
     <aside class="container">
         <div class="services">
-            <button data-modal-target="#modal" class="mechanics"><i class="fa fa-regular fa-car"></i>Mechanika pojazdowa</button>
-            <button class="oil"><i class="fa fa-regular fa-oil-can"></i>Serwis olejowy</button>
-            <button class="tires"><i class="fa fa-solid fa-record-vinyl"></i>Wulkanizacja</button>
-            <button class="cooling"><i class="fa fa-solid fa-snowflake"></i>Klimatyzacja</button>
-            <button class="polishing"><i class="fa fa-regular fa-hand-sparkles"></i>Polerowanie reflektorów</button>
+            <button data-modal-target="#mechanics" class="mechanics"><i class="fa fa-regular fa-car"></i>Mechanika pojazdowa</button>
+            <button data-modal-target="#oil" class="oil"><i class="fa fa-regular fa-oil-can"></i>Serwis olejowy</button>
+            <button data-modal-target="#tires" class="tires"><i class="fa fa-solid fa-record-vinyl"></i>Wulkanizacja</button>
+            <button data-modal-target="#cooling" class="cooling"><i class="fa fa-solid fa-snowflake"></i>Klimatyzacja</button>
+            <button data-modal-target="#polishing" class="polishing"><i class="fa fa-regular fa-hand-sparkles"></i>Polerowanie reflektorów</button>
         </div> 
     </aside>
-    <div class="modal" id="modal">
+
+    <!-- Mechanics popup -->
+
+    <div class="modal" id="mechanics">
         <div class="modal-header">
-            <div class="title">Mechanika pojazdowa</div>
+            <div class="title">Mechanika pojazdowa <i class="fa fa-regular fa-car"></i></div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, optio totam. Deserunt, delectus similique, reprehenderit vitae, consequatur dolorum esse error iure doloribus tempora fugit possimus minima rem voluptates quae. Nihil, dicta autem nam eum maxime eius saepe, eos nulla non quod neque cupiditate at necessitatibus possimus itaque sunt ut provident perspiciatis nisi. Natus, at assumenda dolorum dolorem reiciendis illo, dolor quam laboriosam architecto eos aut quae eligendi! At, reiciendis sequi? Nisi, velit tempora aspernatur, commodi exercitationem ipsum sequi et doloremque fugit porro molestias corporis accusamus quo quas cupiditate. Eos distinctio consectetur earum rerum, libero fugit ipsam ratione nihil. Ex, illum.
+            W Best Service oferujemy usługi z zakresu szerokopojętej mechaniki pojazdowej. Naprawiamy auta osobowe i dostawcze oraz przeprowadzamy ich serwis eksploatacyjny - od prostych czynności okresowych, takich jak wulkanizacja czy wymiana płynów, aż po gruntowne remonty podzespołów samochodu, np. planowanie głowicy silnika czy regeneracja turbosprężarki. Gdy tylko istnieje taka możliwość, dobór części zamiennych ustalany jest indywidualnie z Klientem, w celu spełnienia jego potrzeb i zoptymalizowania kosztów naprawy.
         </div>
     </div>
-    <div id="overlay"></div>
+
+    <!-- Oil popup -->
+
+    <div class="modal" id="oil">
+        <div class="modal-header">
+            <div class="title">Serwis olejowy <i class="fa fa-regular fa-oil-can"></i></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Pracujemy na oryginalnych olejach silnikowych najlepszych światowych marek. Bazę i lepkość oleju dobieramy odpowiednio do rodzaju silnika oraz warunków, w których będzie on pracował.
+        </div>
+    </div>
+
+    <!-- Tires popup -->
+
+    <div class="modal" id="tires">
+        <div class="modal-header">
+            <div class="title">Wulkanizacja <i class="fa fa-solid fa-record-vinyl"></i></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Zajmujemy się naprawą i wymianą opon. Jeżeli umknęła Ci nagła zmiana pory roku - zadzwoń, z pewnością umówimy dogodny termin wizyty.
+        </div>
+    </div>
+
+    <!-- Cooling popup -->
+
+    <div class="modal" id="cooling">
+        <div class="modal-header">
+            <div class="title">Serwis klimatyzacji <i class="fa fa-solid fa-snowflake"></i></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Oferujemy kompleksowy serwis klimatyzacji, na który składa się wymiana filtra kabinowego, sprawdzenie szczelności układu, odgrzybianie i nabicie czynnika.
+        </div>
+    </div>
+
+    <!-- Polishing popup -->
+
+    <div class="modal" id="polishing">
+        <div class="modal-header">
+            <div class="title">Polerowanie reflektorów <i class="fa fa-regular fa-hand-sparkles"></i></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            U nas możesz skorzystać także z usługi polerowania i regeneracji reflektorów. Spolerowanie czy uszczelnienie reflektorów wpływa korzystnie na bezpieczeństwo oraz widoczność na drodze, przy okazji poprawiając też estetykę samochodu.   
+        </div>
+    </div>
+
+    <div id="overlay"></div>  <!-- Background around the popup -->
+
+
+
 
     <div class="banner">Ustal termin wizyty<br /><span>603 316 989</span></div>
     
@@ -100,7 +155,7 @@
     
     <article class="about" id="about">
         <h1>O nas</h1>
-        <p>Best Service to warsztat samochodowy, który powstał z chęci samodoskonalenia się i pasji do motoryzacji. Początkowo oferował podstawowe usługi, przez lata stopniowo rozwijając się, poszerzał swoje możliwości o kolejne narzędzia, stanowiska i przede wszystkim doświadczenie. To właśnie dzięki wieloletniemu doświadczeniu, pełnym zaangażowaniu i dążeniu do perfekcji oferowany Klientom wachlarz usług w Best Service realizowany jest na najwyższym poziomie.</p>
+        <p>Best Service to warsztat samochodowy, który powstał w 2015 roku z chęci samodoskonalenia się i pasji do motoryzacji. Początkowo oferował podstawowe usługi, przez lata stopniowo rozwijając się, poszerzał swoje możliwości o kolejne narzędzia, stanowiska i przede wszystkim doświadczenie. To właśnie dzięki wieloletniemu doświadczeniu, pełnym zaangażowaniu i dążeniu do perfekcji oferowany Klientom wachlarz usług w Best Service realizowany jest na najwyższym poziomie.</p>
     </article>
     
     <div class="swiper-container" id="gallery">
@@ -172,7 +227,7 @@
             },
             
         });
-        </script>
+    </script>
     
 </body>
 </html>
