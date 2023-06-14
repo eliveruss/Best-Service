@@ -543,6 +543,7 @@ footer {
   background-color: var(--transparent-black);
   text-align: center;
   align-items: center;
+  justify-content: center;
   border-top-style: dashed;
   border-color: rgba(255, 210, 0, 0.7);
   overflow: hidden;
@@ -553,24 +554,22 @@ footer {
 footer p {
   margin: auto;
   opacity: 0.7;
-  padding: 0 10px 0 10px;
   font-family: var(--alt-font);
+  padding: 1%;
+  font-size: 80%;
 }
 
 .footer1 {
   /* Left side of the footer */
   border-right-style: double;
   border-right-width: 1vw;
-  font-size: 7px;
 }
 
 .footer2 {
   /* Right side of the footer */
-  font-size: 9px;
   right: 0;
   border-left-style: double;
   border-left-width: 1vw;
-  justify-content: center;
 }
 
 /* ==============
@@ -583,8 +582,7 @@ footer p {
   }
 
   .rangeofservices div,
-  .rangeofservices2 div,
-  footer p {
+  .rangeofservices2 div {
     font-size: 1.4em;
   }
 }
@@ -638,11 +636,6 @@ footer p {
 
   .about p {
     font-size: 20px;
-  }
-
-  .footer1 p,
-  .footer2 p {
-    font-size: 2em;
   }
 }
 
@@ -746,14 +739,6 @@ footer p {
   .about p {
     font-size: 4vw;
   }
-
-  .footer1 p {
-    font-size: 4em;
-  }
-
-  .footer2 p {
-    font-size: 3em;
-  }
 }
 
 @media screen and (min-width: 300px) and (orientation: landscape) {
@@ -803,14 +788,6 @@ footer p {
     height: 14vh;
   }
 
-  .footer1 {
-    font-size: 3px;
-  }
-
-  .footer2 {
-    font-size: 7px;
-  }
-
   footer p {
     color: var(--darkyellow);
   }
@@ -845,14 +822,6 @@ footer p {
 
   .footerspace {
     height: 50px;
-  }
-
-  .footer1 p {
-    font-size: 6px;
-  }
-
-  .footer2 p {
-    font-size: 10px;
   }
 }
 
@@ -942,14 +911,6 @@ footer p {
 
   .about p {
     font-size: 20px;
-  }
-
-  .footer1 p {
-    font-size: 8px;
-  }
-
-  .footer2 p {
-    font-size: 14px;
   }
 }
 
@@ -1045,14 +1006,6 @@ footer p {
   footer {
     height: 13vh;
     background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  .footer1 p {
-    font-size: 12px;
-  }
-
-  .footer2 p {
-    font-size: 20px;
   }
 }
 
@@ -1174,12 +1127,12 @@ footer p {
     height: 8vh;
   }
 
-  .footer2 p {
-    font-size: 14px;
-  }
-
   .footerspace {
     height: 8vh;
+  }
+
+  .footer2 {
+    font-size: 130%;
   }
 }
 
@@ -1196,10 +1149,6 @@ footer p {
   .rangeofservices div,
   .rangeofservices2 div {
     font-size: 24px;
-  }
-
-  .footer2 p {
-    font-size: 20px;
   }
 }
 
@@ -1230,14 +1179,6 @@ footer p {
   .services button {
     font-size: 40%;
   }
-
-  .footer1 p {
-    font-size: 1100%;
-  }
-
-  .footer2 p {
-    font-size: 1200%;
-  }
 }
 
 @media screen and (min-width: 4000px) {
@@ -1262,13 +1203,5 @@ footer p {
 
   .services button {
     font-size: 60%;
-  }
-
-  .footer1 p {
-    font-size: 1400%;
-  }
-
-  .footer2 p {
-    font-size: 1500%;
   }
 }
