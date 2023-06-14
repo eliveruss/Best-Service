@@ -1,5 +1,5 @@
 # Best-Service
-Page of "Best Service" located in Wiślina, Poland https://eliveruss.github.io/Best-Service/
+Page of "Best Service" located in Wiślina, Poland https://eliveruss.github.io/Best-Service/ or https://bestservice-wislina.pl/
 
 This project is the one-page website of the car service.
 The structure is very simply and common - HTML file combined with CSS and vanilla JavaScript. All images used on the site are placed in "images" folder.
